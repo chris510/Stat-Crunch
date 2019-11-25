@@ -1,12 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import Root from "./components/root";
+import configureStore from "./store/store";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+document.addEventListener("DOMContentLoaded", () => {
+  // test start
+  // window.getState = store.getState;
+  // window.dispatch = store.dispatch;
+  // test end
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+  const store = configureStore();
+
+  const root = document.getElementById("root");
+  ReactDOM.render(<Root store={store} />, root);
+});
+
