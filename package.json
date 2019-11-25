@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "webpack": "webpack --mode=development --watch"
   },
   "repository": {
     "type": "git",
@@ -22,10 +23,17 @@
   },
   "homepage": "https://github.com/chris510/Stat-Crunch#readme",
   "dependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
     "axios": "^0.19.0",
+    "babel-loader": "^8.0.6",
+    "d3": "^5.14.2",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jquery": "^3.4.1",
-    "vanilla-router": "^1.2.7"
+    "vanilla-router": "^1.2.7",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }
