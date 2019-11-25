@@ -1,43 +1,31 @@
 {
   "name": "stat-crunch",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@babel/core": "^7.7.4",
-    "@babel/preset-env": "^7.7.4",
-    "@babel/preset-react": "^7.7.4",
-    "babel-loader": "^8.0.6",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-redux": "^7.1.3",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0",
-    "redux": "^4.0.4",
-    "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0",
-    "webpack-cli": "^3.3.10"
+  "version": "1.0.0",
+  "description": "This is a project demo that uses Vanilla JS to build a Single Page Application.",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "frontend": "npm start --prefix frontend",
-    "webpack": "webpack --mode=development --watch"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chris510/Stat-Crunch.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chris510/Stat-Crunch/issues"
+  },
+  "homepage": "https://github.com/chris510/Stat-Crunch#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "vanilla-router": "^1.2.7"
   }
 }
