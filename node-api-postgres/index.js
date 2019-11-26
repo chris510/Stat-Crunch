@@ -20,4 +20,27 @@ app.listen(port, () => {
     console.log(`App running on port ${port}.`)
 })
 
-app.get('/shots', db.getShots);
+// app
+// .route('/shots')
+// .get(db.getShots)
+
+const Pool = require('pg').Pool
+
+const pool = new Pool({
+  user: 'chris',
+  host: 'localhost',
+  database: 'nba-shots-db_development',
+  password: 'password',
+  port: 5432,
+})
+
+const getShots = (request, response) => {
+  pool.query("SELECT * FROM Shots WHERE season='2016-17' ", (error, results) => {
+    if (error) {
+      throw error
+    }
+    response.status(200).json(results.rows)
+  })
+}
+
+app.get('/shots', getShots)
