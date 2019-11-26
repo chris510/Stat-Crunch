@@ -1,0 +1,32 @@
+// .svg-container {
+//   display: inline-block;
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+//   padding-bottom: 100%; /* aspect ratio */
+//   padding-right: 100%;
+//   vertical-align: top;
+//   overflow: hidden;
+//   z-index: -1;
+// }
+
+// .svg-content-responsive {
+//   display: inline-block;
+//   position: absolute;
+//   top: 10px;
+//   left: 0;
+// }
+
+// svg .rect {
+//   fill: gold;
+//   stroke: steelblue;
+//   stroke-width: 5px;
+// }
+
+#chart {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
